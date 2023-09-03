@@ -12,8 +12,11 @@ const RockPaperScissorsItem = props => {
   }
   return (
     <ListButtonsContainer>
-      <ListButtons data-testid={`${details.id.toLowerCase()}Button`}>
-        <ButtonImage onClick={onClickButton} src={imageUrl} alt={id} />
+      <ListButtons
+        onClick={onClickButton}
+        data-testid={`${details.id.toLowerCase()}Button`}
+      >
+        <ButtonImage src={imageUrl} alt={id} />
       </ListButtons>
     </ListButtonsContainer>
   )

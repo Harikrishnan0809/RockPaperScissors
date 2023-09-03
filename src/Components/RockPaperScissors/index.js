@@ -53,8 +53,7 @@ class RockPaperScissors extends Component {
 
   inProgressView = () => {
     const {choicesList} = this.props
-    const {userChoice} = this.state
-    console.log(userChoice)
+
     return (
       <InprogressContainer>
         {choicesList.map(eachItem => (
